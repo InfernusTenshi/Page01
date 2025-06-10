@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: block; /* Quitamos el flex para permitir flujo natural */
+}
+
+.form-container {
+  background-color: #1a1a1a;
+	 margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0099cc;
+}
+
+form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+form a {
+  color: #00bfff;
+  text-decoration: none;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;         /* Mantiene el mismo color que el texto normal */
+  text-decoration: none;  /* Sin subrayado */
+}
+
+/* Barra superior */
+.barra {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Título dentro de la barra */
+.titulo {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+/* Contenedor de la barra de búsqueda */
+.busqueda {
+  margin-top: 0.5rem;
+}
+
+/* Campo de entrada */
+.busqueda input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+  max-width: 80%;
+  text-align: center;
+}

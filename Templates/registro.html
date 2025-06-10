@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - NO-NAME</title>
+  <link rel="stylesheet" href="../static/auth.css" />
+
+</head>
+
+<body>
+  <header class="barra"> 
+    <a href="main.html" class="logo-link"><h1 class="titulo" >NO-NAME</h1></a>
+  <div class="busqueda">
+    <input type="text" placeholder="Buscar..." />
+  </div>
+  </header>
+
+
+<div class="form-container">
+  <h1>Crear cuenta en NO-NAME</h1>
+	  <form method="post">
+        <input type="text" name="name" placeholder="Nombre de usuario " required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Contraseña " required><br>
+        <input type="number" name="age" placeholder="Edad" required>
+        Género:
+        <select name="gender" required>
+            <option value="">Selecciona</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="No binario">No binario</option>
+            <option value="Otro">Otro</option>
+        </select><br>
+        <button type="submit">Registrarse</button> <br>
+        <p>¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
+      </form>
+    </div>
+</body>
+</html>

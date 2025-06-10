@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* Barra superior */
+.barra {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Título dentro de la barra */
+.titulo {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+/* Contenedor de la barra de búsqueda */
+.busqueda {
+  margin-top: 0.5rem;
+}
+
+/* Campo de entrada */
+.busqueda input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* Contenedor principal que divide la pantalla */
+.zona-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Área izquierda */
+.zona-izquierda {
+  background-color: #2e2e2e;
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  max-width: 45%;
+}
+
+/* Barra divisoria */
+.divisor {
+  width: 2px;
+  background-color: #888;
+  margin: 0 1rem;
+}
+
+/* Área derecha */
+.zona-derecha {
+  background-color: #3a3a3a;
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  max-width: 45%;
+}
+.layout {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+/* Menú lateral izquierdo */
+.menu-lateral {
+  width: 200px;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.menu-lateral .usuario {
+  width: 40px;
+  height: 40px;
+  background-color: #00bfff;
+  border-radius: 50%;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  width: 100%;
+}
+
+.menu-lateral li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.btn-publicar {
+  margin-top: auto;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Contenido central */
+.contenido-central {
+  flex: 1;
+  background-color: #2e2e2e;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.input-post {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Publicaciones */
+.post {
+  background-color: #444;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Sugerencias derecha */
+.sugerencias {
+  width: 250px;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.busqueda-secundaria {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.sugerencia {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;         /* Mantiene el mismo color que el texto normal */
+  text-decoration: none;  /* Sin subrayado */
+}
